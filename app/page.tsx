@@ -1,113 +1,203 @@
-import Image from 'next/image'
+import Image from "next/image";
 
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+	return (
+		<section className='overflow-hidden'>
+			<div className='bg-indigo-950'>
+				<div className='container px-4 mx-auto'>
+					<div className='flex items-center justify-between py-5'>
+						<div className='w-auto'>
+							<div className='flex flex-wrap items-center'>
+								<div className='w-auto pr-2 font-medium'>
+									<a href='#'>
+										<img src='basko-assets/logos/basko-logo-light.png' alt='' />
+										Company Name Here
+									</a>
+								</div>
+							</div>
+						</div>
+						<div className='w-auto'>
+							<div className='flex flex-wrap items-center'>
+								<div className='w-auto hidden lg:block'>
+									<ul className='flex items-center mr-8'>
+										<li className='mr-14 font-medium text-white hover:text-gray-200 tracking-tight'>
+											<a href='#'>Projects</a>
+										</li>
+										<li className='mr-14 font-medium text-white hover:text-gray-200 tracking-tight'>
+											<a href='#'>Blog</a>
+										</li>
+										<li className='mr-8 font-medium text-white hover:text-gray-200 tracking-tight'>
+											<a href='#'>About Us</a>
+										</li>
+										<li className='font-medium text-white hover:text-gray-200 tracking-tight'>
+											<a href='#'>Contact Us </a>
+										</li>
+									</ul>
+								</div>
+								<div className='w-auto hidden lg:block'>
+									<div className='inline-block'>
+										<a
+											className='inline-block px-5 py-3 text-white font-semibold text-center tracking-tight bg-indigo-500 hover:bg-indigo-600 rounded-lg focus:ring-4 focus:ring-indigo-300 transition duration-200'
+											href='#'>
+											Donate
+										</a>
+									</div>
+								</div>
+								<div className='w-auto lg:hidden'>
+									<a href='#'>
+										<svg
+											className='navbar-burger text-indigo-600'
+											width='51'
+											height='51'
+											fill='none'
+											xmlns='http://www.w3.org/2000/svg'>
+											<rect
+												width='56'
+												height='56'
+												rx='28'
+												fill='currentColor'></rect>
+											<path
+												d='M37 32H19M37 24H19'
+												stroke='white'
+												stroke-width='1.5'
+												stroke-linecap='round'
+												stroke-linejoin='round'></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className='hidden navbar-menu fixed top-0 left-0 bottom-0 w-4/6 sm:max-w-xs z-50'>
+					<div className='navbar-backdrop fixed inset-0 bg-gray-800 opacity-80'></div>
+					<nav className='relative z-10 px-9 pt-8 bg-black h-full overflow-y-auto'>
+						<div className='flex flex-wrap justify-between h-full'>
+							<div className='w-full'>
+								<div className='flex items-center justify-between -m-2'>
+									<div className='w-auto p-2'>
+										<a className='inline-block' href='#'>
+											<img
+												src='basko-assets/logos/basko-logo-light.png'
+												alt=''
+											/>
+										</a>
+									</div>
+									<div className='w-auto p-2'>
+										<a className='navbar-burger text-white' href='#'>
+											<svg
+												width='24'
+												height='24'
+												fill='none'
+												xmlns='http://www.w3.org/2000/svg'>
+												<path
+													d='M6 18L18 6M6 6L18 18'
+													stroke='currentColor'
+													stroke-width='2'
+													stroke-linecap='round'
+													stroke-linejoin='round'></path>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div className='flex flex-col justify-center py-16 w-full'>
+								<ul>
+									<li className='mb-12 font-medium text-white hover:text-gray-200 tracking-tight'>
+										<a href='#'>Projects</a>
+									</li>
+									<li className='mb-12 font-medium text-white hover:text-gray-200 tracking-tight'>
+										<a href='#'>Blog</a>
+									</li>
+									<li className='mb-12 font-medium text-white hover:text-gray-200 tracking-tight'>
+										<a href='#'>About Us</a>
+									</li>
+									<li className='font-medium text-white hover:text-gray-200 tracking-tight'>
+										<a href='#'>Contact</a>
+									</li>
+								</ul>
+							</div>
+							<div className='flex flex-col justify-end w-full pb-8'>
+								<a
+									className='inline-block px-5 py-3 text-white font-semibold text-center tracking-tight bg-indigo-500 hover:bg-indigo-600 rounded-lg focus:ring-4 focus:ring-indigo-300 transition duration-200'
+									href='#'>
+									Donate
+								</a>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<div className='pt-16 lg:pt-32 pb-24 lg:pb-52 bg-indigo-950 overflow-hidden'>
+				<div className='container px-4 mx-auto'>
+					<div className='flex flex-wrap -m-8'>
+						<div className='w-full md:w-1/2 p-8'>
+							<div className='md:max-w-lg'>
+								<h1 className='font-heading mb-12 text-6xl md:text-7xl text-white tracking-tighter'>
+									HELP TO REBUILD
+								</h1>
+								<p className='text-white text-lg md:text-xl mb-12'>
+									We are a non-profit organization focused on helping make the
+									world around us a better, happier place. With the help of our
+									tireless staff, we organize fundraisers, community-building
+									events, and in-depth training sessions for our volunteers.
+								</p>
+								<div className='flex flex-wrap -m-2 mb-14'>
+									<div className='w-auto p-2'>
+										<a
+											className='inline-block px-5 py-4 text-white font-semibold tracking-tight bg-indigo-500 hover:bg-indigo-600 rounded-lg focus:ring-4 focus:ring-indigo-400 transition duration-200'
+											href='#'>
+											Donate Now
+										</a>
+									</div>
+									<div className='w-auto p-2'>
+										<a
+											className='inline-flex items-center px-5 py-4 bg-transparent hover:bg-indigo-600 border border-gray-600 hover:border-indigo-600 rounded-lg focus:ring-4 focus:ring-indigo-300 transition duration-200'
+											href='#'>
+											<span className='text-white font-semibold tracking-tight'>
+												About our Charity
+											</span>
+										</a>
+									</div>
+								</div>
+								<div className='max-w-md'>
+									<div className='flex flex-wrap -m-1.5'>
+										<div className='w-auto p-1.5'>
+											<div className='flex flex-wrap'>
+												<div className='w-auto'>
+													<img
+														src='https://unsplash.com/photos/cVEOh_JJmEE?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink'
+														alt=''
+													/>
+												</div>
+												<div className='w-auto -ml-5'>
+													<img
+														src='basko-assets/images/headers/avatar2.png'
+														alt=''
+													/>
+												</div>
+												<div className='w-auto -ml-5'>
+													<img
+														src='basko-assets/images/headers/avatar3.png'
+														alt=''
+													/>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div className='w-full md:w-1/2 p-8'>
+							<img
+								className='transform hover:-translate-y-2 transition duration-500 rounded-lg shadow-xl'
+								src='https://images.unsplash.com/photo-1509099836639-18ba1795216d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=731&q=80'
+								alt=''
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	);
 }
